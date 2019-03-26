@@ -1,0 +1,288 @@
+﻿<Window x:Class="Kitness1.Useraccuracy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kitness1"
+        mc:Ignorable="d"
+        Title="Kitness" Height="424" Width="800">
+	<Grid>
+		<Image Margin="-6,-30,-0.4,0.4" Source="acurracy.jpg" Stretch="Fill"/>
+
+		<TabControl HorizontalAlignment="Left" Height="334" Margin="30,49,0,0" VerticalAlignment="Top" Width="738" Background="{x:Null}">
+			<TabItem Header="Leg">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="17*"/>
+						<ColumnDefinition Width="366*"/>
+					</Grid.ColumnDefinitions>
+					<Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="200" Margin="20,22,0,0" Stroke="Black" VerticalAlignment="Top" Width="685" Grid.ColumnSpan="2"/>
+					<Canvas x:Name="lcanvas" Grid.Column="1" Margin="7,19,42,87" RenderTransformOrigin="0.5,0.5">
+						<Canvas.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform ScaleX="-1"/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Canvas.RenderTransform>
+						<Image x:Name="lacc_img" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="683" Grid.Column="1"/>
+					</Canvas>
+					<Label x:Name="lday1" Content="before" HorizontalAlignment="Left" Margin="0,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="45">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="lday2" Content="" HorizontalAlignment="Left" Margin="100,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="lday3" Content="" HorizontalAlignment="Left" Margin="200,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="lday4" Content="" HorizontalAlignment="Left" Margin="300,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="lday5" Content="" HorizontalAlignment="Left" Margin="400,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="lday6" Content="" HorizontalAlignment="Left" Margin="500,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="lday7" Content="" HorizontalAlignment="Left" Margin="600,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Neck">
+				<Grid Background="#00E5E5E5">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="17*"/>
+						<ColumnDefinition Width="366*"/>
+					</Grid.ColumnDefinitions>
+					<Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="200" Margin="10,24,0,0" Stroke="Black" VerticalAlignment="Top" Width="685" Grid.ColumnSpan="2"/>
+					<Canvas x:Name="ncanvas" Grid.Column="1" Margin="7,19,42,87" RenderTransformOrigin="0.5,0.5">
+						<Canvas.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform ScaleX="-1"/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Canvas.RenderTransform>
+						<Image x:Name="nacc_img" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="685" Grid.Column="1" Canvas.Left="-35"/>
+					</Canvas>
+					<Label x:Name="nday1" Content="before" HorizontalAlignment="Left" Margin="0,240,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="45">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="nday2" Content="" HorizontalAlignment="Left" Margin="100,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="nday3" Content="" HorizontalAlignment="Left" Margin="200,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="nday4" Content="" HorizontalAlignment="Left" Margin="300,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="nday5" Content="" HorizontalAlignment="Left" Margin="400,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="nday6" Content="" HorizontalAlignment="Left" Margin="500,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="nday7" Content="" HorizontalAlignment="Left" Margin="600,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Spine">
+				<Grid Background="#00E5E5E5">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="17*"/>
+						<ColumnDefinition Width="366*"/>
+					</Grid.ColumnDefinitions>
+					<Rectangle Fill="#00F4F4F5" HorizontalAlignment="Left" Height="200" Margin="20,23,0,0" Stroke="Black" VerticalAlignment="Top" Width="685" Grid.ColumnSpan="2"/>
+					<Canvas x:Name="scanvas" Grid.Column="1" Margin="7,19,42,87" RenderTransformOrigin="0.5,0.5">
+						<Canvas.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform ScaleX="-1"/>
+								<SkewTransform/>
+								<RotateTransform/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Canvas.RenderTransform>
+						<Image x:Name="sacc_img" HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="685" Grid.Column="1" Canvas.Left="-2"/>
+					</Canvas>
+					<Label x:Name="sday1" Content="before" HorizontalAlignment="Right" Margin="0,240,687,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="45">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="sday2" Content="" HorizontalAlignment="Left" Margin="100,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="sday3" Content="" HorizontalAlignment="Left" Margin="200,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="sday4" Content="" HorizontalAlignment="Left" Margin="300,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="sday5" Content="" HorizontalAlignment="Left" Margin="400,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="sday6" Content="" HorizontalAlignment="Left" Margin="500,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+					<Label x:Name="sday7" Content="" HorizontalAlignment="Left" Margin="600,247,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Height="26" Width="68">
+						<Label.RenderTransform>
+							<TransformGroup>
+								<ScaleTransform/>
+								<SkewTransform/>
+								<RotateTransform Angle="-41.232"/>
+								<TranslateTransform/>
+							</TransformGroup>
+						</Label.RenderTransform>
+					</Label>
+				</Grid>
+			</TabItem>
+		</TabControl>
+		<Label x:Name="username" Content="user" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+		<Button Content="Button" HorizontalAlignment="Left" Margin="693,23,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+	</Grid>
+</Window>

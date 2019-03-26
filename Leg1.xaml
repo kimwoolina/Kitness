@@ -1,0 +1,21 @@
+﻿<Window x:Class="Kitness1.Leg1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kitness1"
+        mc:Ignorable="d"
+        Title="KITNESS" Height="576" Width="1024">
+	<Grid>
+
+		<Image Margin="-6,-30,-0.4,0.4" Source="leg1_ready.jpg" Stretch="Fill"/>
+
+		<Button x:Name="btStart" HorizontalAlignment="Left" Height="111" Margin="791,300,0,0" VerticalAlignment="Top" Width="121" Click="btStart_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+			<Image Height="103" Source="ready_start.png" Stretch="Fill" Width="104"/>
+		</Button>
+		<Button x:Name="btPrevious" Margin="931,466,11.6,0" VerticalAlignment="Top" RenderTransformOrigin="-0.229,-0.249" Click="btPrevious_Click" Background="{x:Null}" BorderBrush="{x:Null}">
+			<Image Source="return.png" Stretch="Fill" RenderTransformOrigin="0.535,0.434" Height="60" Width="60"/>
+		</Button>
+
+	</Grid>
+</Window>

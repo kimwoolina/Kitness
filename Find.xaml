@@ -1,0 +1,102 @@
+﻿<Window x:Class="Kitness1.Find"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kitness1"
+        mc:Ignorable="d"
+        Title="Kitness" Height="480" Width="640">
+	<Grid>
+		<Image Margin="-6,-30,-0.4,0.4" Source="find.jpg" Stretch="Fill"/>
+		<TabControl HorizontalAlignment="Left" Height="310" Margin="73,98,0,0" VerticalAlignment="Top" Width="492" SelectedIndex="0" SelectionChanged="TabControl_SelectionChanged" Background="{x:Null}" BorderBrush="White">
+			<TabItem Header="Find ID">
+				<Grid Margin="0,0,-2.4,-4.2" OpacityMask="#FFF4A423">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="2*"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<TextBox x:Name="tbidEmail" MaxLength="30" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="31" Margin="177,76,0,0"  TextWrapping="Wrap" Text="" InputMethod.IsInputMethodEnabled="False" VerticalAlignment="Top" Width="255" RenderTransformOrigin="0.487,-0.525" FontSize="14" KeyUp="tbidEmail_keyup"/>
+					<ComboBox x:Name="cbidEmail" HorizontalAlignment="Left" Margin="177,125,0,0" VerticalAlignment="Top" Width="120" FontSize="14" SelectedIndex="0" RenderTransformOrigin="-0.16,0.613" >
+						<Label x:Name="lblidEmail0" Content="gmail.com"/>
+						<Label x:Name="lblidEmail1" Content="naver.com"/>
+						<Label x:Name="lblidEmail2" Content="daum.net"/>
+						<Label x:Name="lblidEmail3" Content="nate.com"/>
+						<TextBox x:Name="tbidEmailKind" Height="23" TextWrapping="Wrap" Text="" Width="120" InputMethod.IsInputMethodEnabled="False" HorizontalAlignment="Stretch" KeyUp="tbidEmailKind_Keyup">
+							<TextBox.Style>
+								<Style  xmlns:sys="clr-namespace:System;assembly=mscorlib" TargetType="{x:Type TextBox}">
+									<Style.Resources>
+										<VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+											<VisualBrush.Visual>
+												<Label Content="직접 입력" Foreground="LightGray" />
+											</VisualBrush.Visual>
+										</VisualBrush>
+									</Style.Resources>
+									<Style.Triggers>
+										<Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+											<Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+										</Trigger>
+										<Trigger Property="Text" Value="{x:Null}">
+											<Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+										</Trigger>
+										<Trigger Property="IsKeyboardFocused" Value="True">
+											<Setter Property="Background" Value="White" />
+										</Trigger>
+									</Style.Triggers>
+								</Style>
+							</TextBox.Style>
+						</TextBox>
+					</ComboBox>
+					<Button x:Name="btidFind" HorizontalAlignment="Left" Margin="206,200,0,0" VerticalAlignment="Top" Width="86" Click="btidFind_Click" Height="41">
+						<Image Height="36" Source="find.png" Stretch="Fill" Width="86"/>
+					</Button>
+				</Grid>
+			</TabItem>
+			<TabItem Header="Find PW">
+				<Grid Background="#00E5E5E5">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0*"/>
+						<ColumnDefinition Width="7*"/>
+						<ColumnDefinition Width="155*"/>
+						<ColumnDefinition Width="0*"/>
+					</Grid.ColumnDefinitions>
+					<TextBox x:Name="tbpwEmail" HorizontalAlignment="Left" Height="31" Margin="153.2,74,0,0" TextWrapping="Wrap" Text="" InputMethod.IsInputMethodEnabled="False" VerticalAlignment="Top" Width="245" RenderTransformOrigin="0.487,-0.525" FontSize="14" Grid.Column="2" KeyUp="tbpwEmail_Keyup"/>
+					<ComboBox x:Name="cbpwEmail" HorizontalAlignment="Left" Margin="153.2,127,0,0" VerticalAlignment="Top" Width="120" FontSize="14" SelectedIndex="0" Grid.Column="2" Height="24" >
+						<Label x:Name="lblpwEmail0" Content="gmail.com"/>
+						<Label x:Name="lblpwEmail1" Content="naver.com"/>
+						<Label x:Name="lblpwEmail2" Content="daum.net"/>
+						<Label x:Name="lblpwEmail3" Content="nate.com"/>
+						<TextBox x:Name="tbpwEmailKind" Height="23" TextWrapping="Wrap" Text="" Width="120" InputMethod.IsInputMethodEnabled="False" KeyUp="tbpwEmailKind_Keyup" HorizontalAlignment="Stretch">
+							<TextBox.Style>
+								<Style  xmlns:sys="clr-namespace:System;assembly=mscorlib" TargetType="{x:Type TextBox}">
+									<Style.Resources>
+										<VisualBrush x:Key="CueBannerBrush" AlignmentX="Left" AlignmentY="Center" Stretch="None">
+											<VisualBrush.Visual>
+												<Label Content="직접 입력" Foreground="LightGray" />
+											</VisualBrush.Visual>
+										</VisualBrush>
+									</Style.Resources>
+									<Style.Triggers>
+										<Trigger Property="Text" Value="{x:Static sys:String.Empty}">
+											<Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+										</Trigger>
+										<Trigger Property="Text" Value="{x:Null}">
+											<Setter Property="Background" Value="{StaticResource CueBannerBrush}" />
+										</Trigger>
+										<Trigger Property="IsKeyboardFocused" Value="True">
+											<Setter Property="Background" Value="White" />
+										</Trigger>
+									</Style.Triggers>
+								</Style>
+							</TextBox.Style>
+						</TextBox>
+					</ComboBox>
+					<Button x:Name="btpwFind"  HorizontalAlignment="Left"  Margin="190.2,200,0,0" VerticalAlignment="Top" Width="86" Grid.Column="2" Click="btpwFind_Click" Height="40">
+						<Image Height="36" Source="find.png" Stretch="Fill" Width="86"/>
+					</Button>
+					<Label Content="I D" HorizontalAlignment="Left" Margin="38.2,24,0,0" VerticalAlignment="Top"  FontSize="35" Grid.Column="2" Height="61" Width="80" Foreground="White" FontFamily="Arial Rounded MT BOLD" RenderTransformOrigin="1.04,0.459"/>
+					<TextBox x:Name="tbpwID" HorizontalAlignment="Left" Height="31" Margin="153.2,31,0,0" TextWrapping="Wrap" Text="" InputMethod.IsInputMethodEnabled="False" VerticalAlignment="Top" Width="245" RenderTransformOrigin="0.487,-0.525" FontSize="14" Grid.Column="2" KeyUp="tbpwID_Keyup"/>
+				</Grid>
+			</TabItem>
+		</TabControl>
+	</Grid>
+</Window>

@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF6C83C7-3447-48CF-8793-EFE0C19CB6D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kitness1</RootNamespace>
+    <AssemblyName>Kitness1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Kinect, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ChangeCheck.xaml.cs">
+      <DependentUpon>ChangeCheck.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DBM.cs" />
+    <Compile Include="Find.xaml.cs">
+      <DependentUpon>Find.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="help.xaml.cs">
+      <DependentUpon>help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Leg1.xaml.cs">
+      <DependentUpon>Leg1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Start.xaml.cs">
+      <DependentUpon>Start.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Neck1_Run.xaml.cs">
+      <DependentUpon>Neck1_Run.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.xaml.cs">
+      <DependentUpon>Signup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spine2_Run.xaml.cs">
+      <DependentUpon>Spine2_Run.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Neck2_Run.xaml.cs">
+      <DependentUpon>Neck2_Run.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spine1_Run.xaml.cs">
+      <DependentUpon>Spine1_Run.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Leg3_Run.xaml.cs">
+      <DependentUpon>Leg3_Run.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Leg1_Run.xaml.cs">
+      <DependentUpon>Leg1_Run.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Leg2.xaml.cs">
+      <DependentUpon>Leg2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Leg2_Run.xaml.cs">
+      <DependentUpon>Leg2_Run.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Leg3.xaml.cs">
+      <DependentUpon>Leg3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Leg_Selection.xaml.cs">
+      <DependentUpon>Leg_Selection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Neck1.xaml.cs">
+      <DependentUpon>Neck1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Neck2.xaml.cs">
+      <DependentUpon>Neck2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Neck_Selection.xaml.cs">
+      <DependentUpon>Neck_Selection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Partselection.xaml.cs">
+      <DependentUpon>Partselection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spine_Selection.xaml.cs">
+      <DependentUpon>Spine_Selection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spine1.xaml.cs">
+      <DependentUpon>Spine1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Spine2.xaml.cs">
+      <DependentUpon>Spine2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Useraccuracy.xaml.cs">
+      <DependentUpon>Useraccuracy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Useredit.xaml.cs">
+      <DependentUpon>Useredit.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ChangeCheck.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Find.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Leg1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Start.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Neck1_Run.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Signup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Spine2_Run.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Neck2_Run.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Spine1_Run.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Leg3_Run.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Leg1_Run.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Leg2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Leg2_Run.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Leg3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Leg_Selection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Neck1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Neck2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Neck_Selection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Partselection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Spine_Selection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Spine1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Spine2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Useraccuracy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Useredit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\leg_1.JPG" />
+    <Resource Include="image\leg_2.JPG" />
+    <Resource Include="image\leg_3_Squat1.JPG" />
+    <Resource Include="image\leg_3_Squat2.JPG" />
+    <Resource Include="image\neck_1_1.JPG" />
+    <Resource Include="image\neck_1_2.JPG" />
+    <Resource Include="image\neck_2.PNG" />
+    <Resource Include="image\spine_1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\spine_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\leg.PNG" />
+    <Resource Include="image\neck.PNG" />
+    <Resource Include="image\spine.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\Back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="change_check.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="useracurracy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="find.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="help.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="acurracy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="neck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="legs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="useredit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="changepw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="goodbye.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="signup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="signup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="emailcheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="idcheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="neck1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="neck2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="neck1_ready.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ready_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="neck2_ready.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spine1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spine2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leg1_ready.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leg2_ready.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spine1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spine2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leg1_start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="leg2_start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="neck1_start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="neck2_start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spine1_start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="spine2_start.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="acurracy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="count.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

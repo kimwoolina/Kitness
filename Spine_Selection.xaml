@@ -1,0 +1,23 @@
+﻿<Window x:Class="Kitness1.Spine_Selection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kitness1"
+        mc:Ignorable="d"
+        Title="KITNESS" Height="576" Width="1024">
+	<Grid>
+		<Image Margin="-6,-30,-0.4,0.4" Source="background3.jpg" Stretch="Fill"/>
+
+		<Button x:Name="spine1" HorizontalAlignment="Left" Margin="164,122,0,0" VerticalAlignment="Top" Width="662" Height="90" FontSize="35" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Click="spine1_Click">
+			<Image  Width="662" Height="90"  Source="spine1.png" Stretch="Fill"/>
+		</Button>
+		<Button x:Name="spine2" HorizontalAlignment="Left" Margin="164,259,0,0" VerticalAlignment="Top" Width="662" Height="90" FontSize="35" FontWeight="Bold" HorizontalContentAlignment="Left" Click="spine2_Click">
+			<Image  Source="spine2.png" Stretch="Fill"  Width="662" Height="90" />
+		</Button>
+		<Button x:Name="btBack" HorizontalAlignment="Left" Height="65" Margin="940,475,0,0" VerticalAlignment="Top" Width="65" FontSize="12" FontFamily="Segoe UI Black" Click="btBack_Click" Background="{x:Null}" Foreground="{x:Null}" BorderBrush="{x:Null}" >
+			<Image  Source="return.png" Stretch="Fill" Width="60"/>
+		</Button>
+
+	</Grid>
+</Window>

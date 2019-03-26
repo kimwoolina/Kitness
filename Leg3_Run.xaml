@@ -1,0 +1,28 @@
+﻿<Window x:Class="Kitness1.Leg3_Run"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kitness1"
+        mc:Ignorable="d"
+        Title="KITNESS" Height="450" Width="800">
+    <Canvas Name="canvas1">
+        <Image HorizontalAlignment="Left" Height="245" VerticalAlignment="Top" Width="180" Source="image/leg_3_Squat2.JPG" Stretch="Fill" Canvas.Left="125" Canvas.Top="76"/>
+
+        <Label x:Name="KitnessLabel" Content="Kitness" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" 
+               FontWeight="Bold" FontSize="20" Width="90" FontFamily="Segoe UI Black" Height="34"/>
+        <Image x:Name="user_img" HorizontalAlignment="Left" Height="329" Margin="329,22,0,0" VerticalAlignment="Top" Width="400"/>
+        <Label Content="count : " HorizontalAlignment="Left" Margin="348,355,0,0" VerticalAlignment="Top"
+               FontWeight="Bold" FontSize="20" Width="90" FontFamily="Segoe UI Black" Height="34"/>
+        <Label Content="   kcal : " HorizontalAlignment="Left" Margin="567,355,0,0" VerticalAlignment="Top"
+            FontWeight="Bold" FontSize="20" Width="90" FontFamily="Segoe UI Black" Height="34"/>
+        <Label Content="0" HorizontalAlignment="Left" Height="27" Margin="457,362,0,0" VerticalAlignment="Top" Width="40"
+               FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black"/>
+        <Label Content="0" HorizontalAlignment="Left" Height="27" Margin="680,362,0,0" VerticalAlignment="Top" Width="40"
+            FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black"/>
+        <Label Content="난이도 : ★★★" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="87" FontSize="12" FontFamily="Segoe UI Black" Canvas.Left="95" Canvas.Top="355"/>
+        <Label Content="휜다리 자세 교정" HorizontalAlignment="Left" Height="25" Margin="85,326,0,0" VerticalAlignment="Top" Width="106" FontSize="12" FontFamily="Segoe UI Black"/>
+        <Button x:Name="btBack" Content="돌아가기" HorizontalAlignment="Left" Height="28" Margin="10,381,0,0" VerticalAlignment="Top" Width="57" FontSize="12" FontFamily="Segoe UI Black" Click="btBack_Click"/>
+
+    </Canvas>
+</Window>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="Kitness1.Spine1_Run"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kitness1"
+        mc:Ignorable="d"
+        Title="KITNESS" Height="576" Width="1024">
+	<Canvas Name="canvas1">
+		<Image Height="576" Canvas.Left="-6" Source="spine1_start.jpg" Stretch="Fill" Width="1024" Canvas.Top="-30"/>
+		<Label Content="count : " HorizontalAlignment="Left" VerticalAlignment="Top"
+               FontWeight="Bold" FontSize="20" Width="90" FontFamily="Segoe UI Black" Height="34" Canvas.Left="119" Canvas.Top="270"/>
+		<Label Content="0" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="40"
+               FontWeight="Bold" FontSize="15" FontFamily="Segoe UI Black" Canvas.Left="214" Canvas.Top="276"/>
+		<Image x:Name="user_img" HorizontalAlignment="Left" Height="452" VerticalAlignment="Top" Width="463" Canvas.Left="443" Canvas.Top="32"/>
+		<Button x:Name="btBack" HorizontalAlignment="Left" Height="76" VerticalAlignment="Top" Width="76" FontSize="12" FontFamily="Segoe UI Black" Click="btBack_Click" Background="{x:Null}" Canvas.Left="932" Canvas.Top="460">
+			<Image Height="60" Source="return.png" Stretch="Fill" Width="60"/>
+		</Button>
+
+	</Canvas>
+</Window>

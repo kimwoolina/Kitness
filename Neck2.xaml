@@ -1,0 +1,20 @@
+﻿<Window x:Class="Kitness1.Neck2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kitness1"
+        mc:Ignorable="d"
+        Title="KITNESS" Height="576" Width="1024">
+	<Grid>
+		<Image Margin="-6,-30,-0.4,0.4" Source="neck2_ready.jpg" Stretch="Fill"/>
+
+		<Button x:Name="btStart" Height="107" Margin="812,317,0,0" VerticalAlignment="Top" Width="107"  HorizontalAlignment="Left" Click="btStart_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Image Height="103" Source="ready_start.png" Stretch="Fill" Width="104"/>
+		</Button>
+		<Button x:Name="btPrevious" Width="68" Height="68" HorizontalAlignment="Left" Margin="940,475,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.229,-0.249" Click="btPrevious_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+			<Image Height="60" Source="return.png" Stretch="Fill" Width="60"/>
+		</Button>
+
+	</Grid>
+</Window>
