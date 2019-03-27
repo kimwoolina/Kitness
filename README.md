@@ -1,8 +1,16 @@
 ## Kitness
 'Kitness',programing in C#, is a posture correction program that is used in conjunction with the Kinect.
+
+
  Exercising in the bad posture isn't much helpful for your health.
+ 
+ 
  You can use this program to correct the text neck, improve the scoliosis, and bowed legs.
+ 
+ 
  Also, It allows you to see at a glance how your attitude accuracy is changing through the 'accuracy' function.
+ 
+ 
 
 ## Prerequisites
 - [KinectStudio][1] installed.
