@@ -21,3 +21,7 @@ Also, It allows you to see at a glance how your attitude accuracy is changing th
 [2]: https://visualstudio.microsoft.com/ko/vs/older-downloads/
 [3]: http://www.microsoft.com/ko-kr/download/details.aspx?id=2906
 [4]: https://www.microsoft.com/ko-kr/download/details.aspx?id=11774
+
+
+## Paper
+- https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE08757731
